@@ -9,7 +9,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({
   title,
   subtitle,
-  backgroundImage = "bg-hero-pattern"
+  backgroundImage = "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80"
 }) => {
   const isUrl = backgroundImage.includes('http') || backgroundImage.includes('url');
   const style = isUrl ? { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('${backgroundImage.replace(/url\(['"]?(.+?)['"]?\)/, '$1')}')` } : {};

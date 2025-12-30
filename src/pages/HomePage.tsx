@@ -112,7 +112,10 @@ const HomePage: React.FC = () => {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 10, ease: "linear" }}
-            className="w-full h-full bg-hero-pattern bg-cover bg-center"
+            className="w-full h-full bg-cover bg-center"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80')`
+            }}
           />
         </div>
 
@@ -309,7 +312,12 @@ const HomePage: React.FC = () => {
 
       {/* CTA Section */}
       <section className="py-40 relative overflow-hidden">
-        <div className="absolute inset-0 bg-spa-pattern bg-cover bg-center"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920')`
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
 
         <div className="container mx-auto px-6 relative z-20">
